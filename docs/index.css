@@ -1,6 +1,6 @@
 html {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     color: #302010;
     background-color: #FFFFFF;
 }
@@ -28,9 +28,14 @@ p:first-child {
     margin-top: 0;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
 a.icon-button {
     top: 0;
     width: auto;
+    margin-top: 10px;
     text-decoration: none;
     color: #FFFFFF;
     background-color: #715C48;
@@ -41,6 +46,11 @@ a.icon-button {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: relative;
+    transition: background-color 0.08s linear;
+}
+
+a.icon-button:hover {
+    background-color: #98785b;
 }
 
 a.icon-button:active {
@@ -54,10 +64,8 @@ a.icon-button > i {
 a.icon-button > span {
     top: 1px;
     margin-left: 10px;
-    font-size: 18px;
     line-height: 0;
     text-decoration: none;
-    text-transform: uppercase;
     position: relative;
 }
 
@@ -107,11 +115,15 @@ content-container-columns.edge > div:last-child {
 
 content-spacer {
     width: 40px;
-    height: 40px;
+    height: 0;
 }
 
 @media (max-width: 540px) {
     content-container-columns {
         flex-direction: column;
+    }
+    content-spacer {
+        width: 0;
+        height: 10px;
     }
 }
