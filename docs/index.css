@@ -58,7 +58,10 @@ a.icon-button:active {
 }
 
 a.icon-button > i {
+    width: 24px;
+    height: 24px;
     font-size: 24px;
+    overflow: hidden;
 }
 
 a.icon-button > span {
@@ -80,12 +83,12 @@ img.book-cover {
 
 main > header {
     border-top: 20px solid #715C48;
-    background-color: #F9F7F5;
+    background-color: #F1EDE9;
 }
 
 main > footer {
     border-bottom: 20px solid #715C48;
-    background-color: #F9F7F5;
+    background-color: #F1EDE9;
 }
 
 content-container {
