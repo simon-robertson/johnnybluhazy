@@ -1,7 +1,11 @@
 html {
+    --color-primary: #674f39;
+    --color-primary-dark: #423426;
+    --color-primary-light: #F1EDE9;
+
     font-family: "Roboto", sans-serif;
     font-size: 17px;
-    color: #302010;
+    color: var(--color-primary-dark);
     background-color: #FFFFFF;
 }
 
@@ -10,7 +14,7 @@ body {
 }
 
 h1 {
-    color: #715C48;
+    color: var(--color-primary);
     margin: 0;
     margin-bottom: 30px;
     font-size: 36px;
@@ -38,7 +42,7 @@ a.icon-button {
     margin-top: 10px;
     text-decoration: none;
     color: #FFFFFF;
-    background-color: #715C48;
+    background-color: var(--color-primary);
     padding: 12px 18px 12px 15px;
     border-radius: 8px;
     display: inline-flex;
@@ -46,11 +50,11 @@ a.icon-button {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: relative;
-    transition: background-color 0.08s linear;
+    transition: filter 0.08s linear;
 }
 
 a.icon-button:hover {
-    background-color: #98785b;
+    filter: saturate(3.0);
 }
 
 a.icon-button:active {
@@ -62,6 +66,7 @@ a.icon-button > i {
     height: 24px;
     font-size: 24px;
     overflow: hidden;
+    user-select: none;
 }
 
 a.icon-button > span {
@@ -70,11 +75,13 @@ a.icon-button > span {
     line-height: 0;
     text-decoration: none;
     position: relative;
+    user-select: none;
 }
 
 img {
     width: 100%;
     border-radius: 10px;
+    user-select: none;
 }
 
 img.book-cover {
@@ -82,13 +89,13 @@ img.book-cover {
 }
 
 main > header {
-    border-top: 20px solid #715C48;
-    background-color: #F1EDE9;
+    border-top: 20px solid var(--color-primary);
+    background-color: var(--color-primary-light);
 }
 
 main > footer {
-    border-bottom: 20px solid #715C48;
-    background-color: #F1EDE9;
+    border-bottom: 20px solid var(--color-primary);
+    background-color: var(--color-primary-light);
 }
 
 content-container {
