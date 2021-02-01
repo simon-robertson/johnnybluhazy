@@ -1,7 +1,7 @@
 html {
-    --color-primary: #674f39;
-    --color-primary-dark: #423426;
-    --color-primary-light: #F1EDE9;
+    --color-primary: #40536e;
+    --color-primary-dark: #292e36;
+    --color-primary-light: #eceff3;
 
     font-family: "Roboto", sans-serif;
     font-size: 17px;
@@ -50,11 +50,6 @@ a.icon-button {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: relative;
-    transition: filter 0.08s linear;
-}
-
-a.icon-button:hover {
-    filter: saturate(3.0);
 }
 
 a.icon-button:active {
@@ -67,12 +62,16 @@ a.icon-button > i {
     font-size: 24px;
     overflow: hidden;
     user-select: none;
+    transition: transform 0.1s linear;
+}
+
+a.icon-button:hover > i {
+    transform: scale(1.3);
 }
 
 a.icon-button > span {
     top: 1px;
     margin-left: 10px;
-    line-height: 0;
     text-decoration: none;
     position: relative;
     user-select: none;
